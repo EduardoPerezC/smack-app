@@ -1,0 +1,6 @@
+framework module Pods_smackTests {
+  umbrella header "Pods-smackTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
