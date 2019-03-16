@@ -11,12 +11,17 @@
 		627237AF223475500048F254 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627237AE223475500048F254 /* ChatViewController.swift */; };
 		627237B1223475770048F254 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627237B0223475770048F254 /* ChannelViewController.swift */; };
 		627237B3223488570048F254 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627237B2223488560048F254 /* GradientView.swift */; };
+		627237B52234A4CA0048F254 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627237B42234A4CA0048F254 /* LoginViewController.swift */; };
+		627237B82234A5D70048F254 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627237B72234A5D70048F254 /* Constants.swift */; };
+		627237BA2234B7DF0048F254 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627237B92234B7DF0048F254 /* CreateAccountViewController.swift */; };
 		62A660AF2232131800B6267D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A660AE2232131800B6267D /* AppDelegate.swift */; };
 		62A660B42232131800B6267D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A660B22232131800B6267D /* Main.storyboard */; };
 		62A660B62232131900B6267D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62A660B52232131900B6267D /* Assets.xcassets */; };
 		62A660B92232131900B6267D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A660B72232131900B6267D /* LaunchScreen.storyboard */; };
 		62A660C42232131900B6267D /* smackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A660C32232131900B6267D /* smackTests.swift */; };
 		62A660CF2232131A00B6267D /* smackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A660CE2232131A00B6267D /* smackUITests.swift */; };
+		62E62D47223B4FD200F01882 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E62D46223B4FD200F01882 /* AuthServices.swift */; };
+		62E62D4B223B65BA00F01882 /* AudioChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E62D4A223B65BA00F01882 /* AudioChannel.swift */; };
 		7B382391F0CDD54A5783B503 /* Pods_smackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6EE4491287F4C9618386DE /* Pods_smackTests.framework */; };
 		8C7C786E8E2BC7ED2E5586B6 /* Pods_smackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C05CD6D8C614569F5B7352 /* Pods_smackUITests.framework */; };
 		C3E2B5305C80C7A8BC9A7D29 /* Pods_smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565D8C3458A62F4DF70BC147 /* Pods_smack.framework */; };
@@ -49,6 +54,9 @@
 		627237AE223475500048F254 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		627237B0223475770048F254 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
 		627237B2223488560048F254 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		627237B42234A4CA0048F254 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		627237B72234A5D70048F254 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		627237B92234B7DF0048F254 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		62A660AB2232131800B6267D /* smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A660AE2232131800B6267D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62A660B32232131800B6267D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +69,8 @@
 		62A660CA2232131A00B6267D /* smackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A660CE2232131A00B6267D /* smackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smackUITests.swift; sourceTree = "<group>"; };
 		62A660D02232131A00B6267D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62E62D46223B4FD200F01882 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		62E62D4A223B65BA00F01882 /* AudioChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioChannel.swift; sourceTree = "<group>"; };
 		6A8007D3785E726694C3F838 /* Pods-smackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smackUITests/Pods-smackUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		87C05CD6D8C614569F5B7352 /* Pods_smackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6EE4491287F4C9618386DE /* Pods_smackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +132,8 @@
 			children = (
 				627237AE223475500048F254 /* ChatViewController.swift */,
 				627237B0223475770048F254 /* ChannelViewController.swift */,
+				627237B42234A4CA0048F254 /* LoginViewController.swift */,
+				627237B92234B7DF0048F254 /* CreateAccountViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -139,6 +151,15 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		627237B62234A5B90048F254 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				627237B72234A5D70048F254 /* Constants.swift */,
+				62E62D4A223B65BA00F01882 /* AudioChannel.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		62A660A22232131800B6267D = {
@@ -166,6 +187,8 @@
 		62A660AD2232131800B6267D /* smack */ = {
 			isa = PBXGroup;
 			children = (
+				62E62D45223B4F9500F01882 /* Services */,
+				627237B62234A5B90048F254 /* Utilities */,
 				627237AD223474FE0048F254 /* Models */,
 				627237AC223474F20048F254 /* Views */,
 				627237AB223474D10048F254 /* Controllers */,
@@ -195,6 +218,14 @@
 				62A660D02232131A00B6267D /* Info.plist */,
 			);
 			path = smackUITests;
+			sourceTree = "<group>";
+		};
+		62E62D45223B4F9500F01882 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				62E62D46223B4FD200F01882 /* AuthServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		B725762EE8643A8BD1C6772E /* Pods */ = {
@@ -427,10 +458,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627237B52234A4CA0048F254 /* LoginViewController.swift in Sources */,
 				62A660AF2232131800B6267D /* AppDelegate.swift in Sources */,
 				627237AF223475500048F254 /* ChatViewController.swift in Sources */,
 				627237B3223488570048F254 /* GradientView.swift in Sources */,
+				627237BA2234B7DF0048F254 /* CreateAccountViewController.swift in Sources */,
+				627237B82234A5D70048F254 /* Constants.swift in Sources */,
+				62E62D47223B4FD200F01882 /* AuthServices.swift in Sources */,
 				627237B1223475770048F254 /* ChannelViewController.swift in Sources */,
+				62E62D4B223B65BA00F01882 /* AudioChannel.swift in Sources */,
 				627237AA22346D450048F254 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

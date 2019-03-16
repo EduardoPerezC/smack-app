@@ -10,22 +10,34 @@ import UIKit
 
 class ChannelViewController: UIViewController {
 
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loginButton.addTarget(self, action: #selector(ChannelViewController.onPressedLoginButton), for: .touchUpInside)
+        
         self.revealViewController()?.rearViewRevealWidth =  self.view.frame.width - 60
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.s
+    
+    @objc func onPressedLoginButton(){
+        
+        
+        performSegue(withIdentifier: Constants.TO_LOGIN, sender: self)
+        
     }
-    */
+    
+    
+    //this method will be invoked to return from CreateAccountControllers
+    @IBAction func unwindToChannelView(segue : UIStoryboardSegue){
+        
+    
+        
+    }
+    
 
+    
 }
