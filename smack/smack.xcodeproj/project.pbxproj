@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62026C602259229C0022D10A /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62026C5F2259229C0022D10A /* MessageService.swift */; };
+		62026C622259232A0022D10A /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62026C612259232A0022D10A /* Channel.swift */; };
+		62026C64225963C40022D10A /* ChannelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62026C63225963C40022D10A /* ChannelTableViewCell.swift */; };
+		621BA4642240921700300034 /* AvatarPickUpCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621BA4632240921700300034 /* AvatarPickUpCollectionViewCell.swift */; };
+		6251E7222252F6B500FF99F3 /* TestContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6251E7212252F6B500FF99F3 /* TestContact.swift */; };
+		6271DA2C224DC23A00EAB39B /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6271DA2B224DC23A00EAB39B /* CircleImageView.swift */; };
 		627237AA22346D450048F254 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627237A822346D450048F254 /* SWRevealViewController.m */; };
 		627237AF223475500048F254 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627237AE223475500048F254 /* ChatViewController.swift */; };
 		627237B1223475770048F254 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627237B0223475770048F254 /* ChannelViewController.swift */; };
@@ -20,8 +26,13 @@
 		62A660B92232131900B6267D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A660B72232131900B6267D /* LaunchScreen.storyboard */; };
 		62A660C42232131900B6267D /* smackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A660C32232131900B6267D /* smackTests.swift */; };
 		62A660CF2232131A00B6267D /* smackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A660CE2232131A00B6267D /* smackUITests.swift */; };
+		62E3F86522543A4100E7F010 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E3F86322543A4100E7F010 /* ProfileViewController.swift */; };
+		62E3F86622543A4100E7F010 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E3F86422543A4100E7F010 /* ProfileViewController.xib */; };
 		62E62D47223B4FD200F01882 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E62D46223B4FD200F01882 /* AuthServices.swift */; };
 		62E62D4B223B65BA00F01882 /* AudioChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E62D4A223B65BA00F01882 /* AudioChannel.swift */; };
+		62FC9DFA223D644B0036F760 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FC9DF9223D644B0036F760 /* RoundedButton.swift */; };
+		62FC9DFC223DAFC20036F760 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FC9DFB223DAFC20036F760 /* UserDataService.swift */; };
+		62FC9DFE223DF2DE0036F760 /* AvatarPickUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FC9DFD223DF2DE0036F760 /* AvatarPickUpViewController.swift */; };
 		7B382391F0CDD54A5783B503 /* Pods_smackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6EE4491287F4C9618386DE /* Pods_smackTests.framework */; };
 		8C7C786E8E2BC7ED2E5586B6 /* Pods_smackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C05CD6D8C614569F5B7352 /* Pods_smackUITests.framework */; };
 		C3E2B5305C80C7A8BC9A7D29 /* Pods_smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565D8C3458A62F4DF70BC147 /* Pods_smack.framework */; };
@@ -48,6 +59,12 @@
 		22D2EE00750DAD3F327CBC84 /* Pods-smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.release.xcconfig"; sourceTree = "<group>"; };
 		24A31F7B0B94E42283DC0768 /* Pods-smackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-smackUITests/Pods-smackUITests.release.xcconfig"; sourceTree = "<group>"; };
 		565D8C3458A62F4DF70BC147 /* Pods_smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62026C5F2259229C0022D10A /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		62026C612259232A0022D10A /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		62026C63225963C40022D10A /* ChannelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewCell.swift; sourceTree = "<group>"; };
+		621BA4632240921700300034 /* AvatarPickUpCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickUpCollectionViewCell.swift; sourceTree = "<group>"; };
+		6251E7212252F6B500FF99F3 /* TestContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestContact.swift; sourceTree = "<group>"; };
+		6271DA2B224DC23A00EAB39B /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		627237A722346D440048F254 /* smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		627237A822346D450048F254 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		627237A922346D450048F254 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -69,8 +86,13 @@
 		62A660CA2232131A00B6267D /* smackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A660CE2232131A00B6267D /* smackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smackUITests.swift; sourceTree = "<group>"; };
 		62A660D02232131A00B6267D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62E3F86322543A4100E7F010 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		62E3F86422543A4100E7F010 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		62E62D46223B4FD200F01882 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		62E62D4A223B65BA00F01882 /* AudioChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioChannel.swift; sourceTree = "<group>"; };
+		62FC9DF9223D644B0036F760 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		62FC9DFB223DAFC20036F760 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		62FC9DFD223DF2DE0036F760 /* AvatarPickUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickUpViewController.swift; sourceTree = "<group>"; };
 		6A8007D3785E726694C3F838 /* Pods-smackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smackUITests/Pods-smackUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		87C05CD6D8C614569F5B7352 /* Pods_smackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6EE4491287F4C9618386DE /* Pods_smackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +156,8 @@
 				627237B0223475770048F254 /* ChannelViewController.swift */,
 				627237B42234A4CA0048F254 /* LoginViewController.swift */,
 				627237B92234B7DF0048F254 /* CreateAccountViewController.swift */,
+				62FC9DFD223DF2DE0036F760 /* AvatarPickUpViewController.swift */,
+				62E3F86322543A4100E7F010 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -142,6 +166,10 @@
 			isa = PBXGroup;
 			children = (
 				627237B2223488560048F254 /* GradientView.swift */,
+				62FC9DF9223D644B0036F760 /* RoundedButton.swift */,
+				621BA4632240921700300034 /* AvatarPickUpCollectionViewCell.swift */,
+				6271DA2B224DC23A00EAB39B /* CircleImageView.swift */,
+				62026C63225963C40022D10A /* ChannelTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,6 +177,8 @@
 		627237AD223474FE0048F254 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6251E7212252F6B500FF99F3 /* TestContact.swift */,
+				62026C612259232A0022D10A /* Channel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +217,7 @@
 		62A660AD2232131800B6267D /* smack */ = {
 			isa = PBXGroup;
 			children = (
+				62E3F86722543A9700E7F010 /* XIBs */,
 				62E62D45223B4F9500F01882 /* Services */,
 				627237B62234A5B90048F254 /* Utilities */,
 				627237AD223474FE0048F254 /* Models */,
@@ -220,10 +251,20 @@
 			path = smackUITests;
 			sourceTree = "<group>";
 		};
+		62E3F86722543A9700E7F010 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				62E3F86422543A4100E7F010 /* ProfileViewController.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		62E62D45223B4F9500F01882 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				62E62D46223B4FD200F01882 /* AuthServices.swift */,
+				62FC9DFB223DAFC20036F760 /* UserDataService.swift */,
+				62026C5F2259229C0022D10A /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -352,6 +393,7 @@
 			files = (
 				62A660B92232131900B6267D /* LaunchScreen.storyboard in Resources */,
 				62A660B62232131900B6267D /* Assets.xcassets in Resources */,
+				62E3F86622543A4100E7F010 /* ProfileViewController.xib in Resources */,
 				62A660B42232131800B6267D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,13 +502,23 @@
 			files = (
 				627237B52234A4CA0048F254 /* LoginViewController.swift in Sources */,
 				62A660AF2232131800B6267D /* AppDelegate.swift in Sources */,
+				62026C622259232A0022D10A /* Channel.swift in Sources */,
 				627237AF223475500048F254 /* ChatViewController.swift in Sources */,
+				621BA4642240921700300034 /* AvatarPickUpCollectionViewCell.swift in Sources */,
 				627237B3223488570048F254 /* GradientView.swift in Sources */,
 				627237BA2234B7DF0048F254 /* CreateAccountViewController.swift in Sources */,
 				627237B82234A5D70048F254 /* Constants.swift in Sources */,
+				62E3F86522543A4100E7F010 /* ProfileViewController.swift in Sources */,
+				62026C64225963C40022D10A /* ChannelTableViewCell.swift in Sources */,
+				62FC9DFC223DAFC20036F760 /* UserDataService.swift in Sources */,
+				6251E7222252F6B500FF99F3 /* TestContact.swift in Sources */,
+				62FC9DFA223D644B0036F760 /* RoundedButton.swift in Sources */,
 				62E62D47223B4FD200F01882 /* AuthServices.swift in Sources */,
+				62FC9DFE223DF2DE0036F760 /* AvatarPickUpViewController.swift in Sources */,
+				62026C602259229C0022D10A /* MessageService.swift in Sources */,
 				627237B1223475770048F254 /* ChannelViewController.swift in Sources */,
 				62E62D4B223B65BA00F01882 /* AudioChannel.swift in Sources */,
+				6271DA2C224DC23A00EAB39B /* CircleImageView.swift in Sources */,
 				627237AA22346D450048F254 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

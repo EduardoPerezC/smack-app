@@ -13,13 +13,22 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var createAccountButton: UIButton!
+    @IBOutlet weak var btnLogin: RoundedButton!
+    
+    @IBOutlet weak var txtUserEmail: UITextField!
+    @IBOutlet weak var txtPwd: UITextField!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        spinner.isHidden = true
+        
         closeButton.addTarget(self, action: #selector(LoginViewController.onPressedCloseButton), for: .touchUpInside)
         
         createAccountButton.addTarget(self, action: #selector(LoginViewController.onPressedCreateAccount), for: .touchUpInside)
+        
+        btnLogin.addTarget(self, action: #selector(LoginViewController.onPressedBtnLogin), for: .touchUpInside)
 
         // Do any additional setup after loading the view.
     }
@@ -35,6 +44,39 @@ class LoginViewController: UIViewController {
     @objc func onPressedCreateAccount(){
         
         performSegue(withIdentifier: Constants.TO_CREATE_ACCOUNT, sender: self)
+    }
+    
+    @objc func onPressedBtnLogin(){
+        
+        guard let userEmail = txtUserEmail.text, userEmail != "" else {return }
+        
+        guard let userPwd = txtPwd.text, userPwd != "" else {return }
+        
+        spinner.isHidden = false
+        spinner.startAnimating()
+        AuthServices.instance.loginUser(forEmail: userEmail, forPassword: userPwd) { (isSuccess) in
+            
+            //inside trailing clousure
+            if isSuccess {
+                AuthServices.instance.findUserByEmail(onCompleted: { (isSuccess) in
+                  
+                    if isSuccess {
+                        self.spinner.stopAnimating()
+                        self.spinner.isHidden = true
+                        NotificationCenter.default.post(name: Constants.NOTIFICATION_CHANGED_DATA_USER, object: nil)
+                        self.dismiss(animated: true, completion: nil)
+                        
+                    }
+                    
+                })
+                
+            }
+            
+            
+        }
+        
+        
+        
     }
     
 
