@@ -64,23 +64,46 @@
                                     <constraint firstAttribute="height" constant="77" id="tVe-Cq-kSM"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5e-Js-41J">
+                                <rect key="frame" x="0.0" y="625" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NBk-0u-lC4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eik-DX-eL9">
+                                <rect key="frame" x="347" y="630" width="30" height="30"/>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="onSendMesage:" destination="FnE-2l-fXc" eventType="touchUpInside" id="Xfz-bx-qk3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="I6R-CG-X8r" firstAttribute="top" secondItem="857-Y3-NH9" secondAttribute="top" id="Kku-Br-DTg"/>
+                            <constraint firstItem="857-Y3-NH9" firstAttribute="bottom" secondItem="O5e-Js-41J" secondAttribute="bottom" constant="2" id="Qvb-0T-yen"/>
                             <constraint firstItem="857-Y3-NH9" firstAttribute="trailing" secondItem="I6R-CG-X8r" secondAttribute="trailing" id="TS7-7X-6CO"/>
+                            <constraint firstItem="Eik-DX-eL9" firstAttribute="trailing" secondItem="857-Y3-NH9" secondAttribute="trailing" constant="2" id="Z8R-E0-DhY"/>
+                            <constraint firstItem="857-Y3-NH9" firstAttribute="trailing" secondItem="O5e-Js-41J" secondAttribute="trailing" id="lWB-ki-YIY"/>
+                            <constraint firstItem="O5e-Js-41J" firstAttribute="leading" secondItem="857-Y3-NH9" secondAttribute="leading" id="uta-D9-QKg"/>
+                            <constraint firstItem="Eik-DX-eL9" firstAttribute="centerY" secondItem="O5e-Js-41J" secondAttribute="centerY" id="uzS-sm-t1h"/>
                             <constraint firstItem="I6R-CG-X8r" firstAttribute="leading" secondItem="857-Y3-NH9" secondAttribute="leading" id="vI3-wx-X3C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="857-Y3-NH9"/>
                     </view>
                     <connections>
+                        <outlet property="btnSend" destination="Eik-DX-eL9" id="icx-AX-JrE"/>
                         <outlet property="lblChatTitle" destination="pJu-LC-hAQ" id="yJF-hC-h72"/>
                         <outlet property="menuButton" destination="uEv-JF-Tyb" id="sD4-jR-Kmr"/>
+                        <outlet property="txtMessage" destination="O5e-Js-41J" id="26c-Qb-TOR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JSQ-7j-5sU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-529" y="290"/>
+            <point key="canvasLocation" x="-530.39999999999998" y="289.20539730134936"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="WQ1-df-sf7">
@@ -581,6 +604,7 @@
         <image name="closeButton" width="28" height="28"/>
         <image name="menuProfileIcon" width="99" height="99"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBack" width="28" height="28"/>
         <image name="smackBurger" width="40" height="40"/>
         <image name="smackLogo" width="48" height="40"/>

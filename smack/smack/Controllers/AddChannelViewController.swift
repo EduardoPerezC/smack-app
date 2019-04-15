@@ -20,6 +20,7 @@ class AddChannelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboard()
 
         btnClose.addTarget(self, action: #selector(AddChannelViewController.onClose), for: .touchUpInside)
         

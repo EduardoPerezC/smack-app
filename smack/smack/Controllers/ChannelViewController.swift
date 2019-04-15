@@ -28,6 +28,7 @@ class ChannelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboard()
         debugPrint("ChannelViewController viewDidLoad")
         loginButton.addTarget(self, action: #selector(ChannelViewController.onPressedLoginButton), for: .touchUpInside)
         

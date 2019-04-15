@@ -8,20 +8,45 @@
 
 import UIKit
 
+extension UIViewController{
+    
+    func hideKeyboard(){
+        
+        let tap =  UITapGestureRecognizer(target: self, action: #selector(UIViewController.handlerTapEvent))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
+        
+        
+    }
+    
+    @objc func handlerTapEvent(){
+        
+        self.view.endEditing(true)
+    }
+    
+}
+
+
 class ChatViewController: UIViewController {
 
     
+    
+    
     @IBOutlet weak var lblChatTitle: UILabel!
     @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var txtMessage: UITextField!
+    @IBOutlet weak var btnSend: UIButton!
     
     
     override func viewDidAppear(_ animated: Bool) {
+        
         debugPrint("ChatViewController viewDidAppear")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        hideKeyboard()
+        self.view.bindToKeyboard()
         debugPrint("ChatViewController viewDidLoad")
         //object?.addTarget(objectWhichHasMethod, action: #selector(classWhichHasMethod.yourMethod), for: someUIControlEvents)
 
@@ -42,6 +67,13 @@ class ChatViewController: UIViewController {
                 NotificationCenter.default.post(name: Constants.NOTIFICATION_CHANGED_DATA_USER, object: nil)
                 MessageService.instance.findAllChannels { (isSucess) in
                     debugPrint(MessageService.instance.channels)
+                    
+                    if isSucces {
+                        if MessageService.instance.channels.count > 0{
+                            self.getMessagesForChannel()
+                        }
+                    }
+                    
                 }
             }
             
@@ -68,6 +100,36 @@ class ChatViewController: UIViewController {
         
     }
     
+    func getMessagesForChannel(){
+        
+        guard let channelId = MessageService.instance.selectedChannel?.id  else { return}
+        
+        MessageService.instance.findAllMessagesByChannel(forChannelId: channelId) { (isSuccess) in
+            
+            if isSuccess {
+                
+            }
+        }
+        
+        
+    }
+    
+    @IBAction func onSendMesage(_ sender: Any) {
+        
+        guard let messageValue = txtMessage.text, messageValue != "" else { return}
+        
+        if AuthServices.instance.isLogged {
+            
+            SocketService.instance.sendMessage(message: messageValue) { (isSuccess) in
+                
+                if isSuccess {
+                    
+                }
+            }
+            
+        }
+        
+    }
     
 
 }

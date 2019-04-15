@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboard()
         
         spinner.isHidden = true
         
@@ -68,6 +69,8 @@ class LoginViewController: UIViewController {
                         debugPrint("before calling findAllChannels")
                         MessageService.instance.findAllChannels(onComplete: { (isSucess) in
                            
+                            
+                            
                         })
                         debugPrint("rest of the lines after findAllChannels returns")
                         

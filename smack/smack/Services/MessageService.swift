@@ -40,6 +40,12 @@ class MessageService{
                 self.channels =  jsonData.arrayValue.map({ (jsonChannelItem) -> Channel in
                     return  Channel(forId: jsonChannelItem["_id"].stringValue,  forName: jsonChannelItem["name"].stringValue, forDesc: jsonChannelItem["description"].stringValue)
                 })
+                
+                //set the first channel as a the selected default
+                if self.channels.count > 0 {
+                    self.selectedChannel = self.channels[0]
+                }
+                
                 NotificationCenter.default.post(name: Constants.NOTIFICATION_CHANNELS_LOADED, object: nil)
                 onComplete(true)
             }
@@ -51,6 +57,11 @@ class MessageService{
     
     func appendChannel(_ channel : Channel){
         self.channels.append(channel)
+        
+    }
+    
+    func appendMessage(newMessage : Message){
+        self.messages.append(newMessage)
         
     }
     
@@ -98,6 +109,9 @@ class MessageService{
                     
                     return Message(forId: jsonItem["_id"].stringValue, messageBody: jsonItem["messageBody"].stringValue, userId: jsonItem["userId"].stringValue, channelId: jsonItem["channelId"].stringValue, userName: jsonItem["userName"].stringValue, userAvatar: jsonItem["userAvatar"].stringValue, userAvatarColor: jsonItem["userAvatarColor"].stringValue, timeStamp: jsonItem["timeStamp"].stringValue)
                 })
+                
+                debugPrint(self.messages)
+                debugPrint("findAllMessagesByChannel executed successfully")
                 onCompleted(true)
             }
             else{

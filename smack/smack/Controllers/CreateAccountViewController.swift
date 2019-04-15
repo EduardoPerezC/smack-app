@@ -41,6 +41,7 @@ class CreateAccountViewController: UIViewController {
         
         super.viewDidLoad()
         setUpView()
+        hideKeyboard()
         print("on viewDidLoad")
         // Do any additional setup after loading the view.
     }
