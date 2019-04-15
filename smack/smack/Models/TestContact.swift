@@ -13,11 +13,22 @@ class TestContact{
     private(set) var id : String
     private(set) var name : String
     
+    public let company : String
+    
     init(forId id : String, forName name : String){
         
+        company = "this is the only company"
         self.id = id
         self.name = name
     }
+    
+    func getData(){
+        
+        //self.company = "sv"
+        
+    }
+    
+    
 
     
 }

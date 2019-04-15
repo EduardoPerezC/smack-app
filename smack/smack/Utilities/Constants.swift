@@ -15,13 +15,14 @@ class Constants{
     
    private init(){}
     
-    private static let BASE_URL = "https://app-jepc-smack-api.herokuapp.com/v1/"
+    static let BASE_URL = "https://app-jepc-smack-api.herokuapp.com/v1/"
     static let REGISTER_SERVICE_URL = "\(Constants.BASE_URL)account/register"  //using string interpolation to join strings
     static let LOGIN_USER_URL = "\(Constants.BASE_URL)account/login"
     static let ADD_USER = "\(Constants.BASE_URL)user/add"
     static let FIND_USER_BY_EMAIL = "\(Constants.BASE_URL)/user/byEmail/"
     static let FIND_ALL_CHANNELS = "\(Constants.BASE_URL)channel"
     static let ADD_CHANNEL = "\(Constants.BASE_URL)channel/add"
+    static let FIND_MSG_BY_CHANNEL="\(Constants.BASE_URL)/message/byChannel/"
     
     typealias CompletionHandler = (_ isSuccess : Bool)->()
     
@@ -37,6 +38,9 @@ class Constants{
     
     //creating the name of the notification
     static let NOTIFICATION_CHANGED_DATA_USER = Notification.Name("ChangeDataUserNotification")
+    static let NOTIFICATION_CHANGED_CHANNELS = Notification.Name("ChangeDataChannels")
+    static let NOTIFICATION_CHANNELS_LOADED = Notification.Name("ChannelsLoaded")
+    static let NOTIFICATION_SELECTED_CHANNEL = Notification.Name("SelectedChannel")
     
     //User default constant (these adjustments will be restored everytime the app launches
     static let LOGGED_IN = "isLogged"

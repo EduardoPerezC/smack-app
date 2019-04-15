@@ -64,6 +64,13 @@ class LoginViewController: UIViewController {
                         self.spinner.stopAnimating()
                         self.spinner.isHidden = true
                         NotificationCenter.default.post(name: Constants.NOTIFICATION_CHANGED_DATA_USER, object: nil)
+                        
+                        debugPrint("before calling findAllChannels")
+                        MessageService.instance.findAllChannels(onComplete: { (isSucess) in
+                           
+                        })
+                        debugPrint("rest of the lines after findAllChannels returns")
+                        
                         self.dismiss(animated: true, completion: nil)
                         
                     }

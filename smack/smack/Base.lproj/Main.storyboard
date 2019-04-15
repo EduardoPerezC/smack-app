@@ -74,6 +74,7 @@
                         <viewLayoutGuide key="safeArea" id="857-Y3-NH9"/>
                     </view>
                     <connections>
+                        <outlet property="lblChatTitle" destination="pJu-LC-hAQ" id="yJF-hC-h72"/>
                         <outlet property="menuButton" destination="uEv-JF-Tyb" id="sD4-jR-Kmr"/>
                     </connections>
                 </viewController>
@@ -354,6 +355,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHb-i1-RCK">
                                 <rect key="frame" x="283" y="83" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="onAddChannel:" destination="bPD-07-tIZ" eventType="touchUpInside" id="HCN-MR-pTJ"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2U0-R2-Dob" customClass="CircleImageView" customModule="smack" customModuleProvider="target">
                                 <rect key="frame" x="24" y="572" width="75" height="75"/>
@@ -428,6 +432,7 @@
                         <viewLayoutGuide key="safeArea" id="Zqx-dc-n3a"/>
                     </view>
                     <connections>
+                        <outlet property="btnAddChannel" destination="KHb-i1-RCK" id="tGE-OA-V1o"/>
                         <outlet property="loginButton" destination="NTe-Gi-X4g" id="cMv-Hc-CuV"/>
                         <outlet property="loginImage" destination="2U0-R2-Dob" id="CzE-j5-idl"/>
                         <outlet property="tblvwChannels" destination="OkL-kw-tVs" id="5v9-hc-MQz"/>

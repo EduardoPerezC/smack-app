@@ -22,7 +22,7 @@ class CicleImageView: UIImageView {
     }
     
     func setUpView(){
-        self.layer.cornerRadius = 3.0
+        self.layer.cornerRadius = self.bounds.width / 2
         self.clipsToBounds = true
     }
     /*

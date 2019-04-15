@@ -83,6 +83,8 @@ class UserDataService{
         AuthServices.instance.isLogged = false
         AuthServices.instance.Tokken = ""
         AuthServices.instance.userEmail = ""
+        MessageService.instance.clearChannels()
+        MessageService.instance.selectedChannel = nil
         
     }
 

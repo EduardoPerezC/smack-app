@@ -151,6 +151,8 @@ class AuthServices{
                                 onCompleted(true)
                             }
                             else{
+                                debugPrint("failed at creating user")
+                                debugPrint(response.result.error as Any)
                                 onCompleted(false)
                             }
            }
@@ -161,6 +163,7 @@ class AuthServices{
         
         let requestURL = "\(Constants.FIND_USER_BY_EMAIL)\(AuthServices.instance.userEmail)" //string interpolation
         debugPrint(AuthServices.instance.userEmail)
+        debugPrint(AuthServices.instance.Tokken)
         debugPrint(requestURL)
         
         Alamofire.request(requestURL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: Constants.BEARER_HEADER).responseJSON { (response) in
@@ -175,6 +178,8 @@ class AuthServices{
                 
             }
             else{
+                debugPrint("failed at searching user")
+                debugPrint(response.result.error as Any)
                 onCompleted(false)
                 
             }
